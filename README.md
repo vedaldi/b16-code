@@ -13,7 +13,7 @@ To access a codespace, follow these steps:
 
 1. You will need a GitHub account. If you do not have one, create it [here](https://github.com). After setting up your account, you can also optionally join GitHub education tier [here](https://education.github.com/pack/join). The latter gives you more hours per month to use codespaces.
 
-2. Go to the course GitHub page at https://github.com/vedaldi/b16-examples
+2. Go to the course GitHub page at https://github.com/vedaldi/b16-code
 
 3. Fork the repository using the "Fork" dropdown menu and selecting "Create a new fork":
 
