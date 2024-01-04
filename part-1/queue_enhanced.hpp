@@ -58,7 +58,7 @@ template <typename T> class Dequeue : public Queue<T>
     }
 
   protected:
-    // Return the index of the element to the front of the queue
+    // Return the index of the element at the back of the queue
     size_t _tail() const
     {
         // WRITE YOUR CODE HERE

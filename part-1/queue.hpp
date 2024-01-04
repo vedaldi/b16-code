@@ -52,7 +52,7 @@ template <typename T> class Queue
     bool full() const { return _size == _storage.size(); }
 
   protected:
-    // Return the index of the element to the front of the queue.
+    // Return the index of the element at the front of the queue.
     size_t _head() const
     {
         assert(_size >= 1);
