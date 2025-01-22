@@ -34,22 +34,27 @@ To access a codespace, follow these steps:
    We suggest to pick Clang as it results in better error reporting.
 
 6. Compile and run one the examples:
-   *  First, click on the name of the target to the right of the play icon (⏵) *and select a target like `array_driver`. This button can be found at the botton in the *status bar*.
 
-      <img src="docs/vscode-target-button.png" width="30%" />
+   - First, click on the name of the target in the status bar at the bottom close to the play icon (⏵). Select a target like `array_driver` as shown below (the image might look slightly different depending on the version of VS Code).
 
-      > **Remark.** If you fail to select a specific target, the tool will compile *all* available programs, including the ones from the example sheet. Because the programs from the example sheet are incomplete (on purpose), you will get several compilation errors:
+     <img src="docs/vscode-target-button.png" height="30" />
+     →
+     <img src="docs/vscode-target-button-after.png" height="30" />
 
-   *  Then, click on the play icon (⏵):
 
-      <img src="docs/vscode-play-button.png" width="30%" />
+     > **Remark.** If you fail to select a specific target, the tool will compile _all_ available programs, including the ones from the example sheet. Because the programs from the example sheet are incomplete (on purpose), you will get several compilation errors. This is expected.
 
-      > **Remark.** Do *not* use the play button at the top-right. This does not use CMake to compile your program and will generally not have the correct compilation flags.
-         <img src="docs/vscode-incorrect-play.png" width="100%" />
+   - Then, click on the play icon (⏵). VS Code will ask you to select a target
+     for execution. Choose `array_driver` again.
 
-      This will open up a terminal window to show you the results:
+     <img src="docs/vscode-play-button.png" width="30%" />
 
-      <img src="docs/vscode-run.png" width="100%" />
+     > **Remark.** Do _not_ use the play button at the top-right. This does not use CMake to compile your program and will generally not have the correct compilation flags.
+     > <img src="docs/vscode-incorrect-play.png" width="100%" />
+
+     This will open up a terminal window to show you the results:
+
+     <img src="docs/vscode-run.png" width="100%" />
 
 7. Try to debug the example. Select `array_driver.cpp` in the file browser and click to the left of a line number to drop a breakpoint, denoted by a red bullet:
 

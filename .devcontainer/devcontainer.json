@@ -5,7 +5,9 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": ["ms-vscode.cpptools-extension-pack"]
+      "extensions": ["ms-vscode.cpptools-extension-pack"],
+      "cmake.options.statusBarVisibility": "visible",
+      "cmake.showOptionsMovedNotification": true
     }
   }
 }
