@@ -16,7 +16,7 @@ template <typename V> struct BinaryTreeEnhanced {
     friend V &value(BinaryTreeEnhanced *t) { return t->_value; }
     friend const V &value(const BinaryTreeEnhanced *t)
     {
-        return t->_left_value;
+        return t->_value;
     }
     friend BinaryTreeEnhanced *left(const BinaryTreeEnhanced *t)
     {
