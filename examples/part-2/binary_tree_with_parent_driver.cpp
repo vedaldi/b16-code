@@ -1,18 +1,18 @@
-#include "binary_tree_enhanced.hpp"
+#include "binary_tree_with_parent.hpp"
 #include "binary_tree_print.hpp"
 #include "binary_tree_traversal.hpp"
 
 int main(int argc, char **argv)
 {
-    auto bt = make_binary_tree_enhanced(
+    auto bt = make_binary_tree_with_parent(
         1.0f,
-        make_binary_tree_enhanced(
-            2.0f, make_binary_tree_enhanced(4.0f, {}, {}),
-            make_binary_tree_enhanced(
-                5.0f, {}, make_binary_tree_enhanced(8.0f, {}, {}))),
-        make_binary_tree_enhanced(
-            3.0f, make_binary_tree_enhanced(6.0f, {}, {}),
-            make_binary_tree_enhanced(7.0f, {}, {})));
+        make_binary_tree_with_parent(
+            2.0f, make_binary_tree_with_parent(4.0f, {}, {}),
+            make_binary_tree_with_parent(
+                5.0f, {}, make_binary_tree_with_parent(8.0f, {}, {}))),
+        make_binary_tree_with_parent(
+            3.0f, make_binary_tree_with_parent(6.0f, {}, {}),
+            make_binary_tree_with_parent(7.0f, {}, {})));
 
     std::cout << "Tree:\n";
     print_binary_tree(bt.get());

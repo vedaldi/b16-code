@@ -23,11 +23,11 @@ std::vector<std::vector<hop_t>> floyd_warshall(const Graph &graph)
     for (int r = 0; r < V; ++r) {
         for (int u = 0; u < V; ++u) {
             for (int v = 0; v < V; ++v) {
-                auto duv = DP[u][v].weight;
-                auto dur = DP[u][r].weight;
-                auto drv = DP[r][v].weight;
-                if (dur + drv < duv) {
-                    DP[u][v].weight = dur + drv;
+                auto Duv = DP[u][v].weight;
+                auto Dur = DP[u][r].weight;
+                auto Drv = DP[r][v].weight;
+                if (Dur + Drv < Duv) {
+                    DP[u][v].weight = Dur + Drv;
                     DP[u][v].vertex = DP[r][v].vertex;
                 }
             }

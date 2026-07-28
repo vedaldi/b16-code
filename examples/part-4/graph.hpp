@@ -30,6 +30,7 @@ inline std::ostream &operator<<(std::ostream &os, const hop_t &hop)
     return os << "(" << hop.weight << "," << hop.vertex << ')';
 }
 
+// Shorthand for infinity
 constexpr auto inf = std::numeric_limits<float>::infinity();
 
 // Test graphs

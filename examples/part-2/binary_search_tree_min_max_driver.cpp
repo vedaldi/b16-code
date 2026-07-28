@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "binary_search_tree_enhanced.hpp"
+#include "binary_search_tree_min_max.hpp"
 #include "binary_tree_print.hpp"
 
 int main(int argc, char **argv)
