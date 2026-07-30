@@ -40,3 +40,12 @@ add_executable(queue_enhanced_driver
   queue_enhanced_driver.cpp
   queue_enhanced.hpp
   queue.hpp)
+
+add_executable(array_insert_movable_driver
+  array_insert_movable_driver.cpp
+  array_insert_movable.hpp
+  probes.hpp)
+
+add_executable(list_iterator_driver
+  list_iterator_driver.cpp
+  list_iterator.hpp)

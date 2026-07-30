@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 project(B16-Algorithms-Code VERSION 1.0)
 
-option(BUILD_EXERCISES "Build exercises" ON)
+option(BUILD_NOTES "Build notes" OFF)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
@@ -12,8 +12,9 @@ add_subdirectory(examples/part-1)
 add_subdirectory(examples/part-2)
 add_subdirectory(examples/part-4)
 
+if (BUILD_NOTES)
 add_subdirectory(notes/part-1)
 add_subdirectory(notes/part-2)
 add_subdirectory(notes/part-3)
 add_subdirectory(notes/part-4)
-add_subdirectory(extras)
+endif()
